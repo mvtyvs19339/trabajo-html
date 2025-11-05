@@ -1,0 +1,206 @@
+
+:root{
+    --color-fondo:#b40000;
+    --amarillo:#e2e200;
+}
+
+body {
+    background-color: var(--color-fondo);
+    Font-size: 16px;
+}
+
+html { 
+    Font-size: 62.5%;
+    scrollbar-width: none;
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    justify-content: center;
+    display: flex;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #e2e200;
+
+}
+.arriba{
+    background: linear-gradient(black , #b40000);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+font-weight: bold;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+padding: 0;
+margin: 0;
+}
+
+nav ul li {
+margin-left: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+
+}
+
+.logo > img {
+width: 7rem;
+}
+
+.casa {
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.casa:hover {
+    color: var(--amarillo);
+    transform: scale(1.2);
+}
+
+.casa:active {
+    color: (green);
+}
+
+.casa:focus{
+    color: (--amarillo);
+}
+
+.robin{
+    width: 60rem;
+    height: 75rem;
+}
+footer{
+    background-color: #530000;
+    padding: 3rem;
+    background: linear-gradient(var(--color-fondo), #000000);
+    color: var(--amarillo);
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    gap: 30rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.texto {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+
+}
+
+.texto p {
+    background-color: #4600008e;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 60rem;
+    transition: 0.3s;
+}
+
+.texto p:hover{
+    transform: translateY(-10px);
+    color: #e2e200;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: #e2e200;
+    width: 100%;
+    padding: 2rem;
+    gap: 46rem;
+    
+}
+.info{
+    width: 5rem;
+}
+.logorobin{
+    width: 10rem;
+    border-radius: 2rem;
+}
+
+
+footer h1{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    color: #e2e200;
+    white-space: nowrap;
+}
+footer a:focus {
+    color: red;
+}
+footer a{
+    color: var(--amarillo);
+    transition: 0.3s;
+    transform: scale(10px);
+
+}
+footer a:hover{
+    color: red;
+    transform: scale(10px);
+}
+#hola:target{
+    border-radius: 40%;
+    border: solid 3px var(--amarillo);
+}
+
+
+
+
+
+@media (min-width: 500px) {
+    .section{
+        display: flex;
+        flex-direction:column-reverse;
+        gap: 10rem;
+    }
+    footer{
+        justify-content: center;
+        gap: 16rem;
+    }
+
+
+}
+@media (min-width: 1024px) {
+    .section{
+        flex-direction: row;
+    }
+    footer{
+        justify-content: space-between;
+    }
+    footer h1{
+        font-size: 5rem
+    }
+
+}
